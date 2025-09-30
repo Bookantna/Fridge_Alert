@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "522028979854-d8of2vh7knlac83l1g6kfg4o1p4e6o0h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fridgealert",
+            "certificate_hash": "08b20be3290ed03c452e605f1f301e8709bfc849"
+          }
+        },
+        {
           "client_id": "522028979854-ersa2291bucbvn281fjvmrtf1p2545li.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

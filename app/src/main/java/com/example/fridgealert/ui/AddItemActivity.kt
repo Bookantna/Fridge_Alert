@@ -32,6 +32,10 @@ class AddItemActivity : AppCompatActivity() {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         binding.additemCategorySpinner.adapter = adapter
 
+        binding.btnAddBack.setOnClickListener {
+            finish()
+        }
+
         // เลือกวันหมดอายุ
         binding.additemExpdate.setOnClickListener {
             val year = calendar.get(Calendar.YEAR)

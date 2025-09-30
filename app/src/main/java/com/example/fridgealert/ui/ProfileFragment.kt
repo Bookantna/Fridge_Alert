@@ -41,15 +41,15 @@ class ProfileFragment : Fragment() {
         }
 
         // Ensure NotificationHelper is defined or replace with standard notification code
-        binding.btnTestNotification.setOnClickListener {
-            // NotificationHelper.showNotification(
-            //     requireContext(),
-            //     id = Random().nextInt(),
-            //     title = "ทดสอบการแจ้งเตือน",
-            //     message = "นี่คือการแจ้งเตือนทดสอบจาก ProfileFragment"
-            // )
-            Toast.makeText(requireContext(), "ส่งการแจ้งเตือนแล้ว", Toast.LENGTH_SHORT).show()
-        }
+//        binding.btnTestNotification.setOnClickListener {
+//            // NotificationHelper.showNotification(
+//            //     requireContext(),
+//            //     id = Random().nextInt(),
+//            //     title = "ทดสอบการแจ้งเตือน",
+//            //     message = "นี่คือการแจ้งเตือนทดสอบจาก ProfileFragment"
+//            // )
+//            Toast.makeText(requireContext(), "ส่งการแจ้งเตือนแล้ว", Toast.LENGTH_SHORT).show()
+//        }
     }
 
     /**
