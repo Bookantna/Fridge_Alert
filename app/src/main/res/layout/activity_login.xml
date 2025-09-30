@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF9800"
+    tools:context=".ui.LoginActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Login"
+        android:textColor="@android:color/white"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/fridge_alert_removebg_preview__1_"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/login_username"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@android:color/white"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="@android:color/white"
+        android:textColorHint="#DDDDDD"
+        app:layout_constraintTop_toBottomOf="@id/imageView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@android:color/white"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@android:color/white"
+        android:textColorHint="#DDDDDD"
+        app:layout_constraintTop_toBottomOf="@id/login_username"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/login_login"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="64dp"
+        android:backgroundTint="@android:color/white"
+        android:text="Login"
+        android:textColor="#FFA500"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_password" />
+
+    <Button
+        android:id="@+id/login_register"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="64dp"
+        android:backgroundTint="#FF7043"
+        android:text="Register"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/login_login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/loginGoogle"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="64dp"
+        android:text="Sign in with Google"
+        android:icon="@drawable/ic_google_color"
+        android:backgroundTint="@android:color/white"
+        android:textColor="@android:color/black"
+
+        app:layout_constraintTop_toBottomOf="@id/login_register"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

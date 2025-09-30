@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- ช่องค้นหา -->
+
+    <!-- Spinner เลือกหมวดหมู่ -->
+
+    <EditText
+        android:id="@+id/searchBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/white"
+        android:drawableStart="@android:drawable/ic_menu_search"
+        android:hint="ค้นหาชื่อสินค้า..."
+        android:padding="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/categoryFilter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/categoryFilter"
+        android:layout_width="316dp"
+        android:layout_height="54dp"
+        android:layout_margin="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchBar" />
+
+    <!-- RecyclerView -->
+
+    <!-- ปุ่ม Add -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="393dp"
+        android:layout_height="546dp"
+        android:layout_margin="8dp"
+        app:layout_constraintBottom_toTopOf="@id/additem_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.888"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/categoryFilter"
+        app:layout_constraintVertical_bias="0.087" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/additem_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="46dp"
+        android:contentDescription="Add Item"
+        android:src="@android:drawable/ic_input_add"
+        app:backgroundTint="#FF9800"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.929"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recycler_view"
+        app:tint="@android:color/white" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

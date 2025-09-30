@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backG">
+
+    <!-- ปุ่ม Back -->
+    <TextView
+        android:id="@+id/btniBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Back"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_margin="12dp"
+        android:gravity="center"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- ชื่อสินค้า -->
+
+            <!-- จำนวน -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Item"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/detailName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Item Name : "
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amount : "
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/detailQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="x2"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:layout_marginBottom="16dp" />
+
+            <!-- หมวดหมู่ -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category : "
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/detailCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:layout_marginBottom="16dp" />
+
+            <!-- วันหมดอายุ -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date of Expiry : "
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/detailExpiry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2025-09-30"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="18sp"
+                android:layout_marginBottom="24dp" />
+
+            <!-- ปุ่มต่าง ๆ -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnDispose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="นำไปทิ้ง"
+                    android:backgroundTint="#F44336"
+                    android:textColor="@android:color/white"
+                    android:layout_marginEnd="16dp" />
+
+                <Button
+                    android:id="@+id/btnCook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="นำไปทำอาหาร"
+                    android:backgroundTint="#4CAF50"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
